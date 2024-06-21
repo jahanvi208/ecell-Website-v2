@@ -4,10 +4,12 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 import Networking from '../components/Networking'
+import ScrollProgress from '../components/ScrollProgress'
 
 function Home() {
     return (
         <div>
+            <ScrollProgress />
             <div className="min-h-screen bg-black text-white flex flex-col">
                 {/* <Navbar /> */}
                 <div className="flex-grow flex flex-col justify-center items-center text-center px-4">
@@ -35,7 +37,7 @@ function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 ">
                     <div className="bg-zinc-800 p-6 rounded-lg">
                         <div className="flex items-center mb-4">
-                            <img undefinedhidden="true" alt="mindset" src="https://placehold.co/40x40" className="mr-4" />
+                            <img alt="mindset" src="https://placehold.co/40x40" className="mr-4" />
                             <h2 className="text-xl font-semibold">Mindset</h2>
                         </div>
                         <p>
@@ -44,7 +46,7 @@ function Home() {
                     </div>
                     <div className="bg-zinc-800 p-6 rounded-lg">
                         <div className="flex items-center mb-4">
-                            <img undefinedhidden="true" alt="mission" src="https://placehold.co/40x40" className="mr-4" />
+                            <img alt="mission" src="https://placehold.co/40x40" className="mr-4" />
                             <h2 className="text-xl font-semibold">Mission</h2>
                         </div>
                         <p>
@@ -53,7 +55,7 @@ function Home() {
                     </div>
                     <div className="bg-zinc-800 p-6 rounded-lg">
                         <div className="flex items-center mb-4">
-                            <img undefinedhidden="true" alt="vision" src="https://placehold.co/40x40" className="mr-4" />
+                            <img alt="vision" src="https://placehold.co/40x40" className="mr-4" />
                             <h2 className="text-xl font-semibold">Vision</h2>
                         </div>
                         <p>
