@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    cursor: none;
+}
+
+a,
+input,
+textarea,
+button {
+    cursor: none;
+    /* Ensure the cursor doesn't change */
+}
+
+  
