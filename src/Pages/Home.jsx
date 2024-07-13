@@ -10,7 +10,7 @@ function Home() {
     return (
         <div>
             <ScrollProgress />
-            <div className="min-h-screen bg-black text-white flex flex-col">
+            <div className=" bg-black text-white flex flex-col" style={{minHeight:'93vh'}}>
                 {/* <Navbar /> */}
                 <div className="flex-grow flex flex-col justify-center items-center text-center px-4">
                     <div className="bg-yellow-500 text-black rounded-full px-4 py-1 mb-4">
@@ -66,8 +66,8 @@ function Home() {
             </div>
 
             <Activities />
-            <Testimonial />
             <Networking />
+            <Testimonial />
 
             <div className="flex items-center justify-center py-10 bg-black">
                 <div className="bg-zinc-800 text-white rounded-lg p-8 max-w-l mx-auto text-center">
@@ -80,7 +80,7 @@ function Home() {
                 </div>
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

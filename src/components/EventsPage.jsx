@@ -26,7 +26,7 @@ const EventCard = ({ title, date, imgSrc }) => {
             <div className="bg-black p-4">
                 <h3 className="text-xl font-bold">{title}</h3>
                 <p className="text-gray-400">{date}</p>
-                <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black">Read more</button>
+                <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:border-black hover:bg-yellow-500 hover:text-black">Read more</button>
             </div>
         </div>
     );
@@ -56,6 +56,18 @@ const EventSection = () => {
                     />
                 ))}
             </div>
+
+            <div className="flex items-center justify-center mt-20 py-10 bg-black">
+                <div className="bg-zinc-800 text-white rounded-lg p-8 max-w-l mx-auto text-center">
+                    <h1 className="text-5xl md:text-5xl font-bold mb-5">Have Ideas in mind? Let's connect and discuss</h1>
+                    <p className="text-zinc-400 md:text-2xl mb-6">Join thousands of teams worldwide who trust Saasta to simplify their project workflows and drive success.</p>
+                    <div className="flex items-center justify-center">
+                        <input type="email" placeholder="example@gmail.com" className="p-3 rounded-l-lg bg-zinc-700 text-white focus:outline-none" />
+                        <button className="bg-yellow-500 text-black p-3 rounded-r-lg">Let's Connect</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
     );
 };

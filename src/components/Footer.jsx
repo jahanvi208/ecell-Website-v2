@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -12,18 +13,17 @@ function Footer() {
                         </div>
                         <p className="mb-4">Experience financial transformation like never before with FIntec.</p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-yellow-500"><img src="https://placehold.co/24x24" alt="link icon"/></a>
-                            <a href="#" className="text-yellow-500"><img src="https://placehold.co/24x24" alt="linkedin icon"/></a>
-                            <a href="#" className="text-yellow-500"><img src="https://placehold.co/24x24" alt="instagram icon"/></a>
+                            <a href="https://www.linkedin.com/company/ecell-abes-ec/mycompany/" className="text-yellow-500"><img src="https://placehold.co/24x24" alt="linkedin icon"/></a>
+                            <a href="https://www.instagram.com/ecell_abesec/" className="text-yellow-500"><img src="https://placehold.co/24x24" alt="instagram icon"/></a>
                         </div>
                     </div>
                     <div>
                         <h3 className="text-lg font-bold mb-4">Page</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-yellow-500">Home</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-yellow-500">Events</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-yellow-500">Contact</a></li>
-                            <li><a href="#" className="text-zinc-400 hover:text-yellow-500">Team</a></li>
+                            <li><Link to="/" className="text-yellow-500">Home</Link></li>
+                            <li><Link to="/events" className="text-zinc-400 hover:text-yellow-500">Events</Link></li>
+                            <li><Link to="/contactus" className="text-zinc-400 hover:text-yellow-500">Contact</Link></li>
+                            <li><Link to="/teams" className="text-zinc-400 hover:text-yellow-500">Team</Link></li>
                         </ul>
                     </div>
                     <div>
