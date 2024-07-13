@@ -66,8 +66,8 @@ function Home() {
             </div>
 
             <Activities />
-            <Testimonial />
             <Networking />
+            <Testimonial />
 
             <div className="flex items-center justify-center py-10 bg-black">
                 <div className="bg-zinc-800 text-white rounded-lg p-8 max-w-l mx-auto text-center">
@@ -80,7 +80,7 @@ function Home() {
                 </div>
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
