@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Testimonial from '../components/Testimonial'
 import Networking from '../components/Networking'
 import ScrollProgress from '../components/ScrollProgress'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 function Home() {
     return (
@@ -14,15 +15,19 @@ function Home() {
                 {/* <Navbar /> */}
                 <div className="flex-grow flex flex-col justify-center items-center text-center px-4">
                     <div className="bg-yellow-500 text-black rounded-full px-4 py-1 mb-4">
-                        <span>From Ideas to Imprint</span>
+                        <Fade cascade>
+                            <span>From Ideas to Imprint</span>
+                        </Fade>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-2">Welcome To</h1>
-                    <h2 className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4">Entrepreneurship Cell</h2>
-                    <p className="text-zinc-400 mb-8">ABES Engineering College, Ghaziabad</p>
-                    <div className="flex items-center justify-center">
-                        <input type="email" placeholder="example@gmail.com" className="p-3 rounded-l-lg bg-zinc-700 text-white focus:outline-none" />
-                        <button className="bg-yellow-500 text-black p-3 rounded-r-lg">Let's Connect</button>
-                    </div>
+                    <Fade cascade="true">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-2">Welcome To</h1>
+                        <h2 className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4">Entrepreneurship Cell</h2>
+                        <p className="text-zinc-400 mb-8">ABES Engineering College, Ghaziabad</p>
+                        <div className="flex items-center justify-center">
+                            <input type="email" placeholder="example@gmail.com" className="p-3 rounded-l-lg bg-zinc-700 text-white focus:outline-none" />
+                            <button className="bg-yellow-500 text-black p-3 rounded-r-lg">Let's Connect</button>
+                        </div>
+                    </Fade>
                 </div>
             </div>
             {/* =============================================================================== */}
@@ -35,33 +40,39 @@ function Home() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 ">
-                    <div className="bg-zinc-800 p-6 rounded-lg">
-                        <div className="flex items-center mb-4">
-                            <img alt="mindset" src="https://placehold.co/40x40" className="mr-4" />
-                            <h2 className="text-xl font-semibold">Mindset</h2>
+                    <Slide direction="left">
+                        <div className="bg-zinc-800 p-6 rounded-lg">
+                            <div className="flex items-center mb-4">
+                                <img alt="mindset" src="https://placehold.co/40x40" className="mr-4" />
+                                <h2 className="text-xl font-semibold">Mindset</h2>
+                            </div>
+                            <p>
+                                Embrace a mindset of creativity, risk-taking, innovation, and learning from mistakes.
+                            </p>
                         </div>
-                        <p>
-                            Embrace creativity, risk-taking, innovation, and learning from mistakes as part of our rich mindset.
-                        </p>
-                    </div>
-                    <div className="bg-zinc-800 p-6 rounded-lg">
-                        <div className="flex items-center mb-4">
-                            <img alt="mission" src="https://placehold.co/40x40" className="mr-4" />
-                            <h2 className="text-xl font-semibold">Mission</h2>
+                    </Slide>
+                    <Slide direction='up'>
+                        <div className="bg-zinc-800 p-6 rounded-lg">
+                            <div className="flex items-center mb-4">
+                                <img alt="mission" src="https://placehold.co/40x40" className="mr-4" />
+                                <h2 className="text-xl font-semibold">Mission</h2>
+                            </div>
+                            <p>
+                                Inspire and motivate students to pursue their entrepreneurial dreams.
+                            </p>
                         </div>
-                        <p>
-                            Inspire and motivate students to pursue their entrepreneurial dreams.
-                        </p>
-                    </div>
-                    <div className="bg-zinc-800 p-6 rounded-lg">
-                        <div className="flex items-center mb-4">
-                            <img alt="vision" src="https://placehold.co/40x40" className="mr-4" />
-                            <h2 className="text-xl font-semibold">Vision</h2>
+                    </Slide>
+                    <Slide direction="right">
+                        <div className="bg-zinc-800 p-6 rounded-lg">
+                            <div className="flex items-center mb-4">
+                                <img alt="vision" src="https://placehold.co/40x40" className="mr-4" />
+                                <h2 className="text-xl font-semibold">Vision</h2>
+                            </div>
+                            <p>
+                                Create a vibrant and dynamic entrepreneurial culture on campus and beyond.
+                            </p>
                         </div>
-                        <p>
-                            Create a vibrant and dynamic entrepreneurial culture on campus and beyond.
-                        </p>
-                    </div>
+                    </Slide>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 // src/components/EventSection.js
 import React from 'react';
+import { Slide, Fade } from 'react-awesome-reveal';
 
 const events = [
     {
@@ -21,14 +22,16 @@ const events = [
 
 const EventCard = ({ title, date, imgSrc }) => {
     return (
-        <div className="bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg">
-            <img src={imgSrc} alt={title} className="w-full h-64 object-cover" />
-            <div className="bg-black p-4">
-                <h3 className="text-xl font-bold">{title}</h3>
-                <p className="text-gray-400">{date}</p>
-                <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:border-black hover:bg-yellow-500 hover:text-black">Read more</button>
+        <Slide direction='down' cascade>
+            <div className="bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg">
+                <img src={imgSrc} alt={title} className="w-full h-64 object-cover" />
+                <div className="bg-black p-4">
+                    <h3 className="text-xl font-bold">{title}</h3>
+                    <p className="text-gray-400">{date}</p>
+                    <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:border-black hover:bg-yellow-500 hover:text-black">Read more</button>
+                </div>
             </div>
-        </div>
+        </Slide>
     );
 };
 
@@ -44,7 +47,9 @@ const EventSection = () => {
                         EVENTS
                     </button>
                 </div>
-                <h1 className="text-7xl text-white font-bold mt-4">Entrepreneurship Cell ABESEC</h1>
+                <Fade>
+                    <h1 className="text-7xl text-white font-bold mt-4">Entrepreneurship Cell ABESEC</h1>
+                </Fade>
             </div>
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-xl">
                 {events.map((event, index) => (

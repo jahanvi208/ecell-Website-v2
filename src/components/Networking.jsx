@@ -1,5 +1,6 @@
 import React from 'react'
 import NetworkCards from './NetworkCards'
+import { Slide } from 'react-awesome-reveal'
 
 function Networking() {
     return (
@@ -16,12 +17,14 @@ function Networking() {
                         </p>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <NetworkCards />
-                        <NetworkCards />
-                        <NetworkCards />
-                        <NetworkCards />
-                        <NetworkCards />
-                        <NetworkCards />
+                        <Slide direction="right" cascade triggerOnce="true">
+                            <NetworkCards />
+                            <NetworkCards />
+                            <NetworkCards />
+                            <NetworkCards />
+                            <NetworkCards />
+                            <NetworkCards />
+                        </Slide>
                     </div>
                 </div>
             </div>

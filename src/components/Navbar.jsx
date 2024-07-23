@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <nav className="p-1" style={{backgroundColor: '#161719'}}>
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto px-[2rem] flex justify-between items-center">
                 <div className="w-20"><img src={Logo} alt="" /></div>
                 <div className="lg:hidden">
                     <button
