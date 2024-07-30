@@ -3,7 +3,7 @@ import React from 'react'
 function Card() {
     return (
         <div>
-            <div className="bg-zinc-800 p-6 rounded-lg">
+            <div style={{backgroundColor:'#0C0D0B'}} className="p-6 rounded-lg">
                 <p className="mb-4">"As an IT manager, security is a top priority for me. Saasta's robust security measures and compliance standards give me peace of mind knowing that our undefined is safe and protected."</p>
                 <div className="flex items-center">
                     <img className="w-10 h-10 rounded-full mr-4" src="https://placehold.co/40x40" alt="David Johnson" />

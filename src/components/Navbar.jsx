@@ -1,7 +1,7 @@
 // src/Navbar.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png'
+import Logo from '../assets/ecell.svg'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +15,13 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="p-1" style={{backgroundColor: '#161719'}}>
+        <nav className="py-5 rounded-[7rem] w-[90vw] mx-auto relative top-3 border-[1px] bg-black" style={{border:'1px solid #322d22',boxShadow: '20px -10px 100px #282410'}}>
             <div className="container mx-auto px-[2rem] flex justify-between items-center">
                 <div className="w-20"><img src={Logo} alt="" /></div>
                 <div className="lg:hidden">
                     <button
                         onClick={toggleNav}
-                        className="text-yellow-500 focus:outline-none"
+                        className="text-white  focus:outline-none"
                         aria-label="Toggle navigation"
                     >
                         {isOpen ? (
@@ -60,28 +60,28 @@ const Navbar = () => {
                 <div className={`lg:flex lg:items-center lg:space-x-20 ${isOpen ? 'block' : 'hidden'} lg:block`}>
                     <Link
                         to="/"
-                        className="text-xl block mt-4 lg:mt-0 text-yellow-500 hover:text-gray-400 transition-colors duration-200"
+                        className="text-xl block mt-4 lg:mt-0 text-white  hover:text-[#ffde59] transition-colors duration-200"
                         onClick={closeNav}
                     >
                         Home
                     </Link>
                     <Link
                         to="/teams"
-                        className="text-xl block mt-4 lg:mt-0 text-yellow-500 hover:text-gray-400 transition-colors duration-200"
+                        className="text-xl block mt-4 lg:mt-0 text-white  hover:text-[#ffde59] transition-colors duration-200"
                         onClick={closeNav}
                     >
                         Teams
                     </Link>
                     <Link
                         to="/events"
-                        className="text-xl block mt-4 lg:mt-0 text-yellow-500 hover:text-gray-400 transition-colors duration-200"
+                        className="text-xl block mt-4 lg:mt-0 text-white  hover:text-[#ffde59] transition-colors duration-200"
                         onClick={closeNav}
                     >
                         Events
                     </Link>
                     <Link
                         to="/contactus"
-                        className="text-xl block mt-4 lg:mt-0 text-yellow-500 hover:text-gray-400 transition-colors duration-200"
+                        className="text-xl block mt-4 lg:mt-0 text-white  hover:text-[#ffde59] transition-colors duration-200"
                         onClick={closeNav}
                     >
                         Contact Us
