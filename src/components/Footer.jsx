@@ -10,9 +10,11 @@ function Footer() {
             <div className="bg-black text-white py-8 px-4">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
-                        <div className="flex items-center mb-4">
-                            <img src={Logo} alt="E-cell logo" className="mr-2 w-12" />
-                        </div>
+                        <Link to='/'>
+                            <div className="flex items-center mb-4">
+                                <img src={Logo} alt="E-cell logo" className="mr-2 w-12" />
+                            </div>
+                        </Link>
                         <p className="mb-4">Experience financial transformation like never before with FIntec.</p>
                         <div className="flex space-x-2">
                             <a href="https://www.linkedin.com/company/ecell-abes-ec/mycompany/" className="text-[#ffde59] text-2xl"><PiLinkedinLogoBold /></a>

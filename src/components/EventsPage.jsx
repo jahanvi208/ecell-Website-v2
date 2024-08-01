@@ -49,7 +49,7 @@ const EventSection = () => {
                         </Fade>
                     </div>
                     <Fade>
-                        <h1 className="text-7xl text-white font-bold mt-4">Entrepreneurship Cell ABESEC</h1>
+                        <h1 className="text-4xl md:text-7xl text-white font-bold mt-4">Entrepreneurship Cell <span className='text-[#ffed59]'>ABESEC</span></h1>
                     </Fade>
                 </div>
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-xl">

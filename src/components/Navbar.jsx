@@ -15,47 +15,51 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="py-5 rounded-[7rem] w-[90vw] mx-auto relative top-3 border-[1px] bg-black" style={{border:'1px solid #322d22',boxShadow: '20px -10px 100px #282410'}}>
-            <div className="container mx-auto px-[2rem] flex justify-between items-center">
-                <div className="w-20"><img src={Logo} alt="" /></div>
-                <div className="lg:hidden">
-                    <button
-                        onClick={toggleNav}
-                        className="text-white  focus:outline-none"
-                        aria-label="Toggle navigation"
-                    >
-                        {isOpen ? (
-                            <svg
-                                className="w-8 h-8"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M6 18L18 6M6 6l12 12"
-                                ></path>
-                            </svg>
-                        ) : (
-                            <svg
-                                className="w-8 h-8"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                ></path>
-                            </svg>
-                        )}
-                    </button>
+        <nav className="py-5 md:rounded-[7rem] md:w-[90vw] mx-auto fixed w-full md:relative md:top-3 border-[1px] z-10 bg-black" style={{ border: '1px solid #322d22', boxShadow: '20px -10px 100px #282410' }}>
+            <div className="container mx-auto px-[2rem] flex flex-col gap-5">
+                <div className='flex justify-between w-full'>
+                    <Link to='/'>
+                        <div className="w-20"><img src={Logo} alt="" /></div>
+                    </Link>
+                    <div className="lg:hidden">
+                        <button
+                            onClick={toggleNav}
+                            className="text-white  focus:outline-none"
+                            aria-label="Toggle navigation"
+                        >
+                            {isOpen ? (
+                                <svg
+                                    className="w-8 h-8"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    ></path>
+                                </svg>
+                            ) : (
+                                <svg
+                                    className="w-8 h-8"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M4 6h16M4 12h16m-7 6h7"
+                                    ></path>
+                                </svg>
+                            )}
+                        </button>
+                    </div>
                 </div>
                 <div className={`lg:flex lg:items-center lg:space-x-20 ${isOpen ? 'block' : 'hidden'} lg:block`}>
                     <Link

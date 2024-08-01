@@ -14,7 +14,7 @@ function Activities() {
                                 <span className='flex items-center gap-2'><GiPolarStar />NATIONAL RECOGNITION</span>
                             </Fade>
                         </div>
-                        <h1 className="text-5xl font-bold leading-tight">
+                        <h1 className="text-2xl sm:text-5xl font-bold leading-tight">
                             <Fade cascade>
                                 <span>National</span> <span style={{ color: '#ffde59' }} >Entrepreneurship</span> <span>
                                     Challenge 2023
@@ -40,7 +40,7 @@ function Activities() {
                                 <span className='flex items-center gap-2'><GiPolarStar />ENGAGING EVENTS</span>
                             </Fade>
                         </div>
-                        <h2 className="text-5xl font-bold leading-tight">
+                        <h2 className="text-2xl sm:text-5xl font-bold leading-tight">
                             <Fade cascade>
                                 <span>Events to encourage</span> <span style={{ color: '#ffde59' }} >Entrepreneurships</span>
                             </Fade>
@@ -74,7 +74,7 @@ function Activities() {
                                 <span className='flex items-center gap-2'><GiPolarStar />REAL WORLD EXPOSURE</span>
                             </Fade>
                         </div>
-                        <h1 className="text-5xl font-bold leading-tight">
+                        <h1 className="text-2xl sm:text-5xl font-bold leading-tight">
                             <Fade cascade>
                                 <span ><span style={{ color: '#ffde59' }} >Visits</span> to <span style={{ color: '#ffde59' }} >startups</span></span> <span><span style={{ color: '#ffde59' }} >and</span> more</span>
                             </Fade>

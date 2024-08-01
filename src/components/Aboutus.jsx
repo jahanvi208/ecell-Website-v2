@@ -6,7 +6,7 @@ import { GiPolarStar } from "react-icons/gi";
 function Aboutus() {
     return (
         <div>
-            <div className="bg-black text-white p-20">
+            <div className="bg-black text-white p-5 sm:p-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
                     <div className="flex flex-col justify-center">
                         <div style={{ backgroundColor: '#141412', color: '#ffde59', border: '1px solid #26250F' }} className=" rounded-full px-4 py-1 mb-4 w-fit">

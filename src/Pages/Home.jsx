@@ -12,9 +12,8 @@ import Idea from '../components/Idea'
 function Home() {
     return (
         <div>
-            <ScrollProgress />
+            {/* <ScrollProgress /> */}
             <div className=" bg-black text-white flex flex-col" style={{ minHeight: '80vh' }}>
-                {/* <Navbar /> */}
                 <div className="flex-grow flex flex-col justify-center items-center text-center px-4">
                     <div style={{ backgroundColor: '#141412', color: '#ffde59', border: '1px solid #26250F' }} className=" rounded-full px-4 py-1 mb-4">
                         <Fade cascade>
@@ -26,8 +25,8 @@ function Home() {
                         <h2 style={{ color: '#ffde59' }} className="text-4xl md:text-6xl font-bold mb-4">Entrepreneurship Cell</h2>
                         <p className="text-zinc-400 mb-8">ABES Engineering College, Ghaziabad</p>
                         <div style={{ backgroundColor: '#0D0D0D' }} className="flex items-center justify-center rounded-lg  py-2 px-4">
-                            <input style={{ backgroundColor: '#0D0D0D' }} type="email" placeholder="example@gmail.com" className="p-3  text-white focus:outline-none w-[20rem]" />
-                            <button style={{ backgroundColor: '#ffde59' }} className=" text-black font-semibold px-5 py-2 rounded-lg">Let's Connect</button>
+                            <input style={{ backgroundColor: '#0D0D0D' }} type="email" placeholder="example@gmail.com" className="p-3  text-white focus:outline-none sm:w-[20rem]" />
+                            <button style={{ backgroundColor: '#ffde59' }} className=" text-black font-semibold px-5 py-1 sm:py-2 rounded-lg">Let's Connect</button>
                         </div>
                     </Fade>
                 </div>
@@ -54,7 +53,7 @@ function Home() {
                             </div>
                             <p>
                                 Embrace a mindset of creativity, risk-taking, innovation, and learning from mistakes.
-                            </p>
+                            </p> 
                         </div>
                     </Slide>
                     <Slide direction='up'>
@@ -87,7 +86,6 @@ function Home() {
             <Testimonial />
             <Idea/>
 
-            {/* <Footer /> */}
         </div>
     )
 }

@@ -28,7 +28,7 @@ function Networking() {
                         <NetworkCards />
 
                     </div> */}
-                    <div className='flex gap-5'>
+                    <div className='flex flex-wrap gap-5 justify-center'>
                         <div className='flex flex-col '>
                             <NetworkCards/>
                             <NetworkCards/>
