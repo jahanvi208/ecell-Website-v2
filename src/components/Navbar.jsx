@@ -16,8 +16,8 @@ const Navbar = () => {
 
     return (
         <nav className="py-5 md:rounded-[7rem] md:w-[90vw] mx-auto fixed w-full md:relative md:top-3 border-[1px] z-10 bg-black" style={{ border: '1px solid #322d22', boxShadow: '20px -10px 100px #282410' }}>
-            <div className="container mx-auto px-[2rem] flex flex-col gap-5">
-                <div className='flex justify-between w-full'>
+            <div className="container mx-auto px-[2rem] flex max-md:flex-col max-md:gap-5 justify-between">
+                <div className='flex justify-between max-md:w-full'>
                     <Link to='/'>
                         <div className="w-20"><img src={Logo} alt="" /></div>
                     </Link>

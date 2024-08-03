@@ -17,6 +17,7 @@ import sc from '../assets/sc.png'
 import t from '../assets/t.png'
 import to from '../assets/to.png'
 import ec from '../assets/ec.png'
+import md from '../assets/md.jpg'
 
 function Teams() {
     return (
@@ -123,7 +124,7 @@ function Teams() {
                         </div>
                     </div>
                     <div className=" flex flex-col justify-center items-center px-[1rem] text-center bg-card py-10 rounded-lg shadow-md">
-                        <img src="https://placehold.co/150x150" alt="example" className="mb-4 rounded-full w-[15rem]" />
+                        <img src={md} alt="example" className="mb-4 rounded-full w-[15rem]" />
                         <h3 className="text-3xl font-semibold">Abhay Bansal</h3>
                         <p className="text-[#ffed59]">Marketing Coordinator</p>
                         <div className="flex space-x-2 mt-4 justify-center">
