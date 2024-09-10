@@ -15,13 +15,15 @@ function Home() {
             {/* <ScrollProgress /> */}
             <div className=" bg-black text-white flex flex-col" style={{ minHeight: '80vh' }}>
                 <div className="flex-grow flex flex-col justify-center items-center text-center px-4">
-                    <div style={{ backgroundColor: '#141412', color: '#ffde59', border: '1px solid #26250F' }} className=" rounded-full px-4 py-1 mb-4">
+                    <div style={{ backgroundColor: '#141412', color: '#FFDE59', border: '1px solid #26250F' }} className=" rounded-full px-4 py-1 mb-4">
                         <Fade cascade>
                             <span className='flex items-center gap-2'><GiPolarStar /> From Ideas to Imprint</span>
                         </Fade>
                     </div>
                     <Fade cascade="true">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-2">Welcome To</h1>
+                        <h1 className="text-4xl md:text-6xl font-bold mb-2">
+                            <span style={{ color: '#FFDE59' }}>Welcome</span> <span>To</span>
+                        </h1>
                         <h2 style={{ color: '#ffde59' }} className="text-4xl md:text-6xl font-bold mb-4">Entrepreneurship Cell</h2>
                         <p className="text-zinc-400 mb-8">ABES Engineering College, Ghaziabad</p>
                         <div style={{ backgroundColor: '#0D0D0D' }} className="flex items-center justify-center rounded-lg  py-2 px-4">
@@ -53,7 +55,7 @@ function Home() {
                             </div>
                             <p>
                                 Embrace a mindset of creativity, risk-taking, innovation, and learning from mistakes.
-                            </p> 
+                            </p>
                         </div>
                     </Slide>
                     <Slide direction='up'>
@@ -84,7 +86,7 @@ function Home() {
             <Activities />
             <Networking />
             <Testimonial />
-            <Idea/>
+            <Idea />
 
         </div>
     )

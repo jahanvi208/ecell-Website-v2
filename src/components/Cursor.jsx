@@ -44,7 +44,7 @@ const Cursor = () => {
         width: `${size}px`,
         height: `${size}px`,
         borderRadius: '50%',
-        backgroundColor: 'yellow',
+        backgroundColor: '#FFDE59',
         pointerEvents: 'none',
         transform: 'translate(-50%, -50%)',
         zIndex: 9999,

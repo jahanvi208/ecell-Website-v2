@@ -17,8 +17,14 @@ function Footer() {
                         </Link>
                         <p className="mb-4">Experience financial transformation like never before with FIntec.</p>
                         <div className="flex space-x-2">
-                            <a href="https://www.linkedin.com/company/ecell-abes-ec/mycompany/" className="text-[#ffde59] text-2xl"><PiLinkedinLogoBold /></a>
-                            <a href="https://www.instagram.com/ecell_abesec/" className="text-[#ffde59] text-2xl"><FaInstagram /></a>
+                            <a href="https://www.linkedin.com/company/ecell-abes-ec/mycompany/" className="text-[#ffde59] flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 border-2 border-gray-800 transition duration-300 ease-in-out hover:bg-[#ffde59] hover:text-white hover:border-[#ffde59]"><PiLinkedinLogoBold className="text-2xl" /></a>
+                            <a
+                                href="https://www.instagram.com/ecell_abesec/"
+                                className="text-[#ffde59] flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 border-2 border-gray-800 transition duration-300 ease-in-out hover:bg-[#ffde59] hover:text-white hover:border-[#ffde59]"
+                            >
+                                <FaInstagram className="text-2xl" />
+                            </a>
+
                         </div>
                     </div>
                     <div>
@@ -34,7 +40,13 @@ function Footer() {
                         <h3 className="text-lg font-bold mb-4">Let's Connect</h3>
                         <form>
                             <input type="email" placeholder="name@email.com" className="w-full p-2 mb-4 bg-zinc-300 text-zinc-800 rounded-md hover:outline-none outline-none" />
-                            <button type="submit" className="w-full p-2 bg-[#ffde59] text-black font-semibold rounded-md">Subscribe</button>
+                            <button
+                                type="submit"
+                                className="w-full p-2 bg-[#ffde59] text-black font-semibold rounded-md transition duration-300 ease-in-out hover:bg-[#e6c84a]"
+                            >
+                                Subscribe
+                            </button>
+
                         </form>
                     </div>
                 </div>

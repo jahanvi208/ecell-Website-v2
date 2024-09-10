@@ -16,7 +16,10 @@ function ContactUs() {
                             <input type="email" placeholder="Email" className="w-1/2 p-3 rounded-lg bg-input text-foreground border border-border focus:outline-none " />
                         </div>
                         <textarea placeholder="Message" className="text-zinc-900 font-semibold w-full p-3 rounded-lg bg-input text-foreground border outline-none border-border focus:outline-none  h-32"></textarea>
-                        <button type="submit" className="w-full p-3 rounded-lg bg-[#ffde59] text-black text-primary-foreground hover:bg-primary/80 font-semibold">
+                        <button
+                            type="submit"
+                            className="w-full p-3 rounded-lg bg-[#ffde59] text-black text-primary-foreground hover:bg-[#e6c84a] font-semibold transition duration-300 ease-in-out"
+                        >
                             Submit
                         </button>
                     </form>
@@ -25,8 +28,8 @@ function ContactUs() {
             <div className="flex flex-col md:flex-row sm:gap-20 bg-black text-white p-6 space-y-6 md:space-y-0 md:space-x-6">
                 <div className="flex-1">
                     {/* <MapContainer/> */}
-                    <div  className='sm:w-[30rem] sm:h-[30rem]'>
-                        <img src={Map}/>
+                    <div className='sm:w-[30rem] sm:h-[30rem]'>
+                        <img src={Map} />
                     </div>
                 </div>
                 <div className="flex-1 space-y-4">

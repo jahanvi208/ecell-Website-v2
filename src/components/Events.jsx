@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
+import { useParams } from "react-router-dom";
 
-const EventDetails = () => {
-  const event = {
-    name: 'The Enterpreneurship Show 2023',
-    image: 'https://framerusercontent.com/images/TdSg8JYhQTUcAIvt2xkESUid1OI.jpg?scale-down-to=1024',
-    details: 'This is the details of the sample event. It includes information about the event such as date, time, location, and other relevant details that attendees might find useful.'
-  };
+// Component to display individual event details
+const EventDetailsPage = () => {
+  const { id } = useParams();
+  const event = eventsData.find((event) => event.id === parseInt(id));
+
+  if (!event) {
+    return <div>Event not found</div>;
+  }
 
   return (
-    <div className="bg-black text-white p-10 min-h-screen flex flex-col items-center justify-start">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-10 mt-20">{event.name}</h1>
-      <p className="text-lg max-w-3xl">{event.details}</p>
-      <img src={event.image} alt={event.name} className="w-full sm:w-3/4 md:w-1/2 h-auto max-h-64 sm:max-h-80 md:max-h-96 mb-5 rounded-lg" />
-      <p className="text-lg max-w-3xl">{event.details}</p>
+    <div className="container mx-auto py-10">
+      <h1 className="text-4xl font-bold text-center mb-8">{event.title}</h1>
+      <img
+        src={event.image}
+        alt={event.title}
+        className="w-full h-96 object-cover mb-6"
+      />
+      <p className="text-gray-500 text-lg mb-4">{event.date}</p>
+      <p className="text-gray-700 text-xl">{event.description}</p>
     </div>
   );
-  
-  
-  
 };
 
-export default EventDetails;
+export default EventDetailsPage;
