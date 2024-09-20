@@ -31,7 +31,7 @@ const EventCard = ({ title, date, imgSrc }) => {
                 <div className="bg-black p-4">
                     <h3 className="text-xl font-bold">{title}</h3>
                     <p className="text-gray-400">{date}</p>
-                    <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:border-black hover:bg-yellow-500 hover:text-black">Read more</button>
+                    <button className="mt-4 bg-transparent border border-white py-2 px-6 rounded-full hover:border-black hover:bg-[#FFDE59] hover:text-black">Read more</button>
                 </div>
             </div>
         </Slide>
