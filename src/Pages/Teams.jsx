@@ -18,7 +18,7 @@ import t from '../assets/t.png'
 import to from '../assets/to.png'
 import ec from '../assets/ec.png'
 import md from '../assets/md.jpg'
-
+import dga from '../assets/dga.jpg'
 import pt from '../assets/pt.jpg'
 import ag from '../assets/ag2.png'
 import nk from '../assets/nk.jpg'
